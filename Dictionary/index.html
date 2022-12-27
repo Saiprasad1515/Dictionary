@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="dictionary,online dictionary">
+    <meta name="description" content="A perfect dictionary for your need">
+    <script src="https://kit.fontawesome.com/eccb15858b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Dictionary</title>
+</head>
+<body>
+    <div class="menu">
+        <ul>
+            <li><a href="/"><b>Dictionary</b></a></li>
+        </ul>
+    </div>
+    <br>
+    <div class="header">
+    <div class="headerContent">
+        <p id="title">What will you <mark>learn today?</mark></p>
+        <p id="subtitle">We help you to know the meaning of <mark>new words.</mark></p>
+        <div class="searchBar"> 
+                <input type="textarea" autocomplete="off" rows="10" cols="10" name="userInput" id="userInput" placeholder="Search...">&nbsp;
+                <span class="icon">
+                    <i class="fa-solid fa-volume-high" id="sound"></i>
+                    <i id="mic" class="fa-solid fa-microphone" onclick="voice();"></i>
+                    <i id="search" class="fa-solid fa-magnifying-glass" onclick="start();"></i>
+                    <i id="cancel" class="fa-solid fa-xmark"></i>
+                </span>
+            <p id="word"></p>
+            <p id="partsofspeech"></p>
+            <p id="slang"></p>
+            <p id="meaning"></p>
+            <p id="example"></p>
+            <p id="other"></p>
+        </div>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
